@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "UnseeNN",
+    "version": "0.1.0",
+    "author": "Jose Fernando Lopez Fernandez",
+    "description": "Stops CNN from autoplaying their videos when you're just trying to read the news.",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.cnn.com/*"
+            ],
+            "js": [
+                "unseenn.js"
+            ]
+        }
+    ]
+}
